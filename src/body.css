@@ -11,7 +11,12 @@
 .dark-body .well {
     background-color: rgb(41, 41, 41);
 }
-
+.dark-body #dropdown {
+    background-color: rgb(41, 41, 41);
+}
+.dark-body .dropdown.open .dropdown-toggle {
+    background-color: rgb(91, 91, 91) !important;
+}
 /* table rows */
 .dark-body .table td {
     color: rgb(255, 255, 255) !important;

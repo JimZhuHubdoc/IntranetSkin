@@ -54,10 +54,10 @@ function resetClasses() {
     document.querySelector('body').classList.remove('dark-font');
     document.querySelector('body').classList.remove('dark-body');
     document.querySelector('body nav div img').src = logoURL;
-    let rows = document.querySelectorAll('.robot-status.danger');
-    for (let i = 0; i < rows.length; i++) {
-        rows[i].className = getHolidayPattern(i);
-    }
+    // let rows = document.querySelectorAll('.robot-status.danger');
+    // for (let i = 0; i < rows.length; i++) {
+    //     rows[i].className = getHolidayPattern(i);
+    // }
 }
 
 function setClasses(options) {

@@ -19,7 +19,7 @@
     },
     "content_scripts": [
         {
-            "matches": ["*://intranet.hubdoc.com/*", "*://github.com/*"],
+            "matches": ["*://intranet.hubdoc.com/*"],
             "js": ["src/content_script.js"],
             "css": ["src/header.css", "src/fonts.css", "src/body.css"],
             "run_at": "document_start"

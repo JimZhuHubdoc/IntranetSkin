@@ -1,0 +1,9 @@
+.dark-header {
+    color: #fff;
+    background-color: #066943;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dark-header > div > ul > li > a {
+    color: #fff !important;
+}

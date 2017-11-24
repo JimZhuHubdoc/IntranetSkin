@@ -1,0 +1,19 @@
+.dark-body {
+    background-color: #fff;
+}
+
+.christmas-even {
+    background-color: green;
+}
+
+.christmas-odd {
+    background-color: red;
+}
+
+.halloween-even {
+    background-color: orange;
+}
+
+.halloween-odd {
+    background-color: purple;
+}

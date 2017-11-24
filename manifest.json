@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Intranet Themer",
+    "version": "1.0.0",
+    "description": "Adds themes to intranet.",
+    "minimum_chrome_version": "26",
+    "icons": {
+        "16": "assets/icon_16.png",
+        "48": "assets/icon_48.png",
+        "128": "assets/icon_128.png"
+    },
+    "page_action": {
+        "default_title": "Toggle skin"
+    },
+    "permissions": ["storage"],
+    "background": {
+        "persistent": false,
+        "scripts": ["src/background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://intranet.hubdoc.com/*", "*://github.com/*"],
+            "js": ["src/content_script.js"],
+            "css": ["src/header.css", "src/fonts.css", "src/body.css"],
+            "run_at": "document_start"
+        }
+    ],
+    "options_ui": {
+        "page": "src/options.html",
+        "chrome_style": true
+    }
+}

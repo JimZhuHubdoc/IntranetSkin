@@ -1,7 +1,109 @@
+/* backgrounds */
 .dark-body {
-    background-color: #fff;
+    background-color: rgb(41, 41, 41);
+}
+.dark-body .panel {
+    background-color: rgb(41, 41, 41);
+}
+/* table rows */
+.dark-body .table td {
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body th {
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body tr:hover {
+    background-color: rgb(65, 65, 65) !important;
+}
+.dark-body tr:hover td {
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body tr a {
+    color: rgb(122, 173, 250) !important;
+}
+.dark-body tr:hover td a {
+    font-weight: 700;
+}
+.dark-body tr td .alert-success {
+    background-color: rgb(0, 92, 14) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body tr td .alert-warning-high {
+    background-color: rgba(255, 255, 0, 0.619) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body tr td .alert-danger {
+    background-color: rgb(96, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
+/* elevated rows */
+.dark-body .danger td {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(92, 25, 25) !important;
+}
+.dark-body .danger:hover td {
+    background-color: rgb(119, 34, 34) !important;
+}
+.dark-body .danger td a {
+    color: rgb(122, 173, 250) !important;
+}
+.dark-body .danger:hover td a {
+    font-weight: 700;
+}
+.dark-body .danger td .alert-success {
+    background-color: rgb(0, 92, 14) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body .danger td .alert-warning-high {
+    background-color: rgba(255, 255, 0, 0.619) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body .danger td .alert-danger {
+    background-color: rgb(96, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* bootstrap defaults */
+.dark-body .label-success {
+    background-color: rgb(0, 92, 14) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body .label-warning-high {
+    background-color: rgba(255, 255, 0, 0.619) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body .label-danger {
+    background-color: rgb(96, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body .label-default {
+    background-color: rgb(77, 77, 77) !important;
+    color: rgb(255, 255, 255) !important;
+}
+.dark-body label {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* donuts */
+.dark-body .robot-donut {
+    background-color: #606060 !important;
+}
+
+.dark-body #robot-biller-name {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* buttons */
+.dark-body .btn {
+    background-color: rgb(62, 62, 62);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* holiday colours */
 .christmas-even {
     background-color: green;
 }

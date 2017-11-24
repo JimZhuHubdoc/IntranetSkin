@@ -1,5 +1,6 @@
-var headerBar;
-var holidayRowClasses;
+let headerBar;
+let holidayRowClasses;
+let logoURL;
 function initOnce() {
     holidayRowClasses = {
         christmas: ['christmas-even', 'christmas-odd'],
@@ -14,6 +15,7 @@ function initOnce() {
 
         // send a message to the background script to enable the page action
         chrome.runtime.sendMessage('enable_page_action', function() {});
+        logoURL = document.querySelector('body nav div img').src;
     }
     applyStyle();
 }
@@ -49,12 +51,14 @@ function applyStyle() {
 }
 
 function resetClasses() {
+    console.log('reset');
     headerBar.classList.remove('dark-header');
     document.querySelector('body').classList.remove('dark-font');
     document.querySelector('body').classList.remove('dark-body');
+    document.querySelector('body nav div img').src = logoURL;
     let rows = document.querySelectorAll('.robot-status.danger');
     for (let i = 0; i < rows.length; i++) {
-        rows[i].className = 'getHolidayPattern(i)';
+        rows[i].className = getHolidayPattern(i);
     }
 }
 
@@ -63,7 +67,8 @@ function setClasses(options) {
 
     if (options.originalHeader && headerBar) {
         console.log('bar');
-
+        logo = document.querySelector('body nav div img');
+        logo.src = chrome.runtime.getURL('../assets/logo.png');
         headerBar.classList.add('dark-header');
     }
     if (options.originalColors) {
@@ -82,7 +87,7 @@ function setClasses(options) {
 
 function getHolidayPattern(parity) {
     let date = new Date();
-    let colourSet = ['info', 'info'];
+    let colourSet = ['danger', 'danger'];
     if (date.getMonth() == 11 && date.getDate() > 15) {
         colourSet = holidayRowClasses.christmas;
     } else if (date.getMonth() == 9 && date.getDate() > 20) {

@@ -1,9 +1,12 @@
 .dark-header {
     color: #fff;
-    background-color: #066943;
-    border-bottom: 1px solid #e5e5e5;
+    background-color: #222222;
 }
 
 .dark-header > div > ul > li > a {
-    color: #fff !important;
+    color: #ccc !important;
+}
+
+.dark-header .open a {
+    color: #000 !important;
 }

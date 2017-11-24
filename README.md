@@ -1,6 +1,6 @@
 # Intranet skin
 
-Makes intranet look better. Changes style depending on date.
+Makes intranet look better.
 
 ## How to manually install
 

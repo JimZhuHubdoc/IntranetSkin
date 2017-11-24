@@ -32,7 +32,6 @@ chrome.runtime.onMessage.addListener(function(message, sender, callback) {
 });
 
 function applyStyle() {
-    console.log('apply');
     chrome.storage.sync.get(
         {
             enabled: true,
@@ -51,7 +50,6 @@ function applyStyle() {
 }
 
 function resetClasses() {
-    console.log('reset');
     headerBar.classList.remove('dark-header');
     document.querySelector('body').classList.remove('dark-font');
     document.querySelector('body').classList.remove('dark-body');
@@ -63,30 +61,24 @@ function resetClasses() {
 }
 
 function setClasses(options) {
-    console.log('set');
-
     if (options.originalHeader && headerBar) {
-        console.log('bar');
         logo = document.querySelector('body nav div img');
         logo.src = chrome.runtime.getURL('../assets/logo.png');
         headerBar.classList.add('dark-header');
     }
     if (options.originalColors) {
-        console.log('colours');
-
         document.querySelector('body').classList.add('dark-font');
         document.querySelector('body').classList.add('dark-body');
-        let rows = document.querySelectorAll('.robot-status.danger');
+        // let rows = document.querySelectorAll('.robot-status.danger');
 
-        for (let i = 0; i < rows.length; i++) {
-            rows[i].className = getHolidayPattern(i);
-        }
-        console.log(rows);
+        // for (let i = 0; i < rows.length; i++) {
+        //     rows[i].className = getHolidayPattern(i);
+        // }
     }
 }
 
 function getHolidayPattern(parity) {
-    let date = new Date();
+    let date = new Date('Dec 25 2017');
     let colourSet = ['danger', 'danger'];
     if (date.getMonth() == 11 && date.getDate() > 15) {
         colourSet = holidayRowClasses.christmas;

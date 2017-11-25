@@ -21,7 +21,7 @@
         {
             "matches": ["*://intranet.hubdoc.com/*"],
             "js": ["src/content_script.js"],
-            "css": ["src/header.css", "src/fonts.css", "src/body.css"],
+            "css": ["src/dark.css"],
             "run_at": "document_start"
         }
     ],

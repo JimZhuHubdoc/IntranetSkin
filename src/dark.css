@@ -1,3 +1,28 @@
+/* summary
+header background:rgb(0, 0, 0)
+header text:rgb(254, 254, 254)
+header nav text:rgb(204, 204, 204)
+header nav open text:rgb(2, 2, 2)
+
+main background:rgb(41, 41, 41)
+main highlight:rgb(91, 91, 91)
+
+*/
+/* header */
+.dark-header {
+    color: rgb(254, 254, 254);
+    background-color: rgb(0, 0, 0);
+    border: none !important;
+}
+
+.dark-header > div > ul > li > a {
+    color: rgb(204, 204, 204) !important;
+}
+
+.dark-header .open a {
+    color: rgb(2, 2, 2) !important;
+}
+
 /* backgrounds */
 .dark-body {
     background-color: rgb(41, 41, 41);
@@ -20,11 +45,11 @@
 /* table rows */
 .dark-body .table td {
     color: rgb(255, 255, 255) !important;
-    border-color: rgb(0, 0, 0) !important;
+    border-color: rgb(1, 1, 1) !important;
 }
 .dark-body .table th {
     color: rgb(255, 255, 255) !important;
-    border-color: rgb(0, 0, 0) !important;
+    border-color: rgb(1, 1, 1) !important;
 }
 .dark-body .table tr {
     background-color: rgb(41, 41, 41) !important;
@@ -39,7 +64,7 @@
     color: rgb(122, 173, 250) !important;
 }
 .dark-body .table tr:hover td a {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(2, 2, 2) !important;
 }
 .dark-body .table tr td .alert-success {
     background-color: rgb(0, 92, 14) !important;
@@ -66,7 +91,7 @@
     color: rgb(122, 173, 250) !important;
 }
 .dark-body .danger:hover td a {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(2, 2, 2) !important;
 }
 .dark-body .danger td .alert-success {
     background-color: rgb(0, 92, 14) !important;
@@ -152,6 +177,14 @@ li {
     border-width: 1px;
     border-color: rgb(255, 255, 255) !important;
     color: rgb(255, 255, 255) !important;
+}
+
+/* fonts */
+body.dark-font,
+.dark-font {
+    font-family: 'Museo', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol';
 }
 
 /* holiday colours */
